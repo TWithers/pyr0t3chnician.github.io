@@ -4,13 +4,58 @@
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <title>SubnetCalc by pyr0t3chnician</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../stylesheets/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link href="../stylesheets/bootstrap.min.css" rel="stylesheet" />
+        <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        </style>
         <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script src="../javascripts/bootstrap.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     </head>
     <body>
-        {{1+1}}
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="#">Subnet Calculator</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Code</a></li>
+                            <li><a href="#about">Angular JS</a></li>
+                            <li><a href="#contact">My Repos</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-unit">
+                <h1>Subnet Calculator</h1>
+                <h4>Built with <a href="http://www.angularjs.org">AngularJS</a></h4>
+                <p>This was built mainly to reinforce concepts I am learning in networking, as well as further development using <a href="http://www.angularjs.org">AngularJS</a></p>
+            </div>
+            <div class="row">
+                <div class="span6">
+                    IP Address: 
+                    <input type="text" class="span1" ng-model="ip[0]"/> .
+                    <input type="text" class="span1" ng-model="ip[1]"/> .
+                    <input type="text" class="span1" ng-model="ip[2]"/> .
+                    <input type="text" class="span1" ng-model="ip[3]"/>
+                </div>
+                <div class="span6">
+                    testing
+                </div>
+            </div>
+        </div>
+        
+
     </body>
 </html>
